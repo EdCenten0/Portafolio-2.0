@@ -1,9 +1,10 @@
 // Colors
-$principal-color: #C2DEDC;
-$secondary-color: #ECE5C7;
-$third-color: #CDC2AE;
-$text-color: #116A7B;
+$first-color: #06283D;
+$second-color: #256D85;
+$third-color: #47B5FF;
+$text-color: #DFF6FF;
 $black: #252525;
+$gray: #c7c7c7;
 
 // Fonts sizes
 
@@ -18,44 +19,75 @@ html{
 }
 
 body {
-    background-color: $third-color;
+    background-color: $first-color;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
 .header{
-    background-color: $principal-color;
-    margin: 3rem 10rem 0;
+    background-color: $second-color;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 4% auto;
     border:1px solid #252525;
     border-radius: 2rem;
-    padding: 2rem;
+    height: 7rem;
+    width: fit-content;
+
     
     
 }
 
 .navbar {
+    margin-top: 1.0rem;
     color: $text-color;
     font-size: $md;
     display: flex;
-    justify-content: space-between;
-
-    a{
-        text-decoration: none;
-        color: $text-color;
-        font-weight: 800;
-    }
-
+    justify-content: space-around;
+    gap: 15rem;
+    align-items: center;
+    margin: 1rem;
+    
     .navbar-list{
         display: flex;
-        align-items: center;
+        align-items: center; 
         gap: 2rem;
         list-style: none;
+        margin: 0;
 
         .navbar-list-element{
-            img{
+            a{
+                text-decoration: none;
+                font-weight: 800;
+                color: $text-color;
+            }
+            
+            .navbar-list-element-sections{
+                padding: 1rem;
+                border-radius: 1rem;
+                  
+            }
+
+            .navbar-list-element-sections:hover{
+                color: #252525;
+                background-color: $gray;
+                border-bottom: 2px solid $black;  
+                
+            }
+            
+            .profile-pic{
                 border-radius: 50%;
-                width: 10rem;
+                width: 5rem;
+                border: 3px solid $third-color;
+            }
+
+            .socialMedia-pic{
+                width: 4rem;
             }
         }
     }
+
+    
 }

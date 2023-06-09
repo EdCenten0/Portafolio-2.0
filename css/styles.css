@@ -3,39 +3,62 @@ html {
 }
 
 body {
-  background-color: #CDC2AE;
+  background-color: #06283D;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
 
 .header {
-  background-color: #C2DEDC;
-  margin: 3rem 10rem 0;
+  background-color: #256D85;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 4% auto;
   border: 1px solid #252525;
   border-radius: 2rem;
-  padding: 2rem;
+  height: 7rem;
+  width: fit-content;
 }
 
 .navbar {
-  color: #116A7B;
+  margin-top: 1rem;
+  color: #DFF6FF;
   font-size: 1.6rem;
   display: flex;
-  justify-content: space-between;
-}
-.navbar a {
-  text-decoration: none;
-  color: #116A7B;
-  font-weight: 800;
+  justify-content: space-around;
+  gap: 15rem;
+  align-items: center;
+  margin: 1rem;
 }
 .navbar .navbar-list {
   display: flex;
   align-items: center;
   gap: 2rem;
   list-style: none;
+  margin: 0;
 }
-.navbar .navbar-list .navbar-list-element img {
+.navbar .navbar-list .navbar-list-element a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #DFF6FF;
+}
+.navbar .navbar-list .navbar-list-element .navbar-list-element-sections {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.navbar .navbar-list .navbar-list-element .navbar-list-element-sections:hover {
+  color: #252525;
+  background-color: #c7c7c7;
+  border-bottom: 2px solid #252525;
+}
+.navbar .navbar-list .navbar-list-element .profile-pic {
   border-radius: 50%;
-  width: 10rem;
+  width: 5rem;
+  border: 3px solid #47B5FF;
+}
+.navbar .navbar-list .navbar-list-element .socialMedia-pic {
+  width: 4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
