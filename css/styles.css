@@ -15,9 +15,9 @@ body {
   left: 0;
   right: 0;
   margin: 4% auto;
-  border: 1px solid #252525;
+  border: 2px solid #202020;
   border-radius: 2rem;
-  height: 7rem;
+  height: fit-content;
   width: fit-content;
 }
 
@@ -27,7 +27,7 @@ body {
   font-size: 1.6rem;
   display: flex;
   justify-content: space-around;
-  gap: 15rem;
+  gap: 60rem;
   align-items: center;
   margin: 1rem;
 }
@@ -50,7 +50,7 @@ body {
 .navbar .navbar-list .navbar-list-element .navbar-list-element-sections:hover {
   color: #252525;
   background-color: #c7c7c7;
-  border-bottom: 2px solid #252525;
+  border-bottom: 2px solid #202020;
 }
 .navbar .navbar-list .navbar-list-element .profile-pic {
   border-radius: 50%;
@@ -59,6 +59,47 @@ body {
 }
 .navbar .navbar-list .navbar-list-element .socialMedia-pic {
   width: 4rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.section_aboutMe {
+  background-color: #256D85;
+  height: fit-content;
+  width: fit-content;
+  border: 2px solid #202020;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.section_aboutMe .section_aboutMe-img img {
+  width: 20rem;
+  border-radius: 50%;
+}
+.section_aboutMe .section_aboutMe-img p {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #06283D;
+  text-transform: uppercase;
+  margin: 0 1rem;
+  background-color: #DFF6FF;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+.section_aboutMe .section_aboutMe-data1 p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+.section_aboutMe .section_aboutMe-data1 p:nth-child(1) {
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styles.css.map */

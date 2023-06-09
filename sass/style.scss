@@ -3,14 +3,14 @@ $first-color: #06283D;
 $second-color: #256D85;
 $third-color: #47B5FF;
 $text-color: #DFF6FF;
-$black: #252525;
+$black: #202020;
 $gray: #c7c7c7;
 
 // Fonts sizes
 
 $sm:1.3rem;
 $md:1.6rem;
-$lg:2rem;
+$lg:2.2rem;
 
 // index.html
 
@@ -22,7 +22,11 @@ body {
     background-color: $first-color;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    
 }
+
+
+// Header
 
 .header{
     background-color: $second-color;
@@ -31,9 +35,9 @@ body {
     left: 0;
     right: 0;
     margin: 4% auto;
-    border:1px solid #252525;
+    border:2px solid $black;
     border-radius: 2rem;
-    height: 7rem;
+    height: fit-content;
     width: fit-content;
 
     
@@ -46,7 +50,7 @@ body {
     font-size: $md;
     display: flex;
     justify-content: space-around;
-    gap: 15rem;
+    gap: 60rem;
     align-items: center;
     margin: 1rem;
     
@@ -91,3 +95,57 @@ body {
 
     
 }
+
+//Main  
+.main{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    
+    
+}
+
+.section_aboutMe {
+    background-color: $second-color;
+    height: fit-content;
+    width: fit-content;
+    border:2px solid $black;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+
+    .section_aboutMe-img{
+        img{
+            width: 20rem;
+            border-radius: 50%;
+        }
+        
+        p{
+            font-size: $lg;
+            font-weight: 800;
+            color: $first-color;
+            text-transform: uppercase;
+            margin: 0 1rem;
+            background-color: $text-color;
+            border-radius: 0.5rem;
+            padding: 0.2rem;
+        }
+
+    }  
+
+    .section_aboutMe-data1 p{
+        font-size: $md;
+        font-weight: 500;
+        padding: 0.5rem;
+    }
+
+    .section_aboutMe-data1 p:nth-child(1){
+        font-size: $lg;
+        font-weight: 700;
+    }
+    
+
+}
+
