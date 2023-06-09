@@ -1,5 +1,41 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-color: rgb(25, 25, 25);
+  background-color: #CDC2AE;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  background-color: #C2DEDC;
+  margin: 3rem 10rem 0;
+  border: 1px solid #252525;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.navbar {
+  color: #116A7B;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a {
+  text-decoration: none;
+  color: #116A7B;
+  font-weight: 800;
+}
+.navbar .navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.navbar .navbar-list .navbar-list-element img {
+  border-radius: 50%;
+  width: 10rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

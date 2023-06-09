@@ -1,3 +1,61 @@
+// Colors
+$principal-color: #C2DEDC;
+$secondary-color: #ECE5C7;
+$third-color: #CDC2AE;
+$text-color: #116A7B;
+$black: #252525;
+
+// Fonts sizes
+
+$sm:1.3rem;
+$md:1.6rem;
+$lg:2rem;
+
+// index.html
+
+html{
+    font-size: 62.5%;
+}
+
 body {
-    background-color: rgb(25, 25, 25);
+    background-color: $third-color;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.header{
+    background-color: $principal-color;
+    margin: 3rem 10rem 0;
+    border:1px solid #252525;
+    border-radius: 2rem;
+    padding: 2rem;
+    
+    
+}
+
+.navbar {
+    color: $text-color;
+    font-size: $md;
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        text-decoration: none;
+        color: $text-color;
+        font-weight: 800;
+    }
+
+    .navbar-list{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+
+        .navbar-list-element{
+            img{
+                border-radius: 50%;
+                width: 10rem;
+            }
+        }
+    }
 }
