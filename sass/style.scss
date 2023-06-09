@@ -53,47 +53,49 @@ body {
     gap: 60rem;
     align-items: center;
     margin: 1rem;
-    
-    .navbar-list{
-        display: flex;
-        align-items: center; 
-        gap: 2rem;
-        list-style: none;
-        margin: 0;
 
-        .navbar-list-element{
-            a{
-                text-decoration: none;
-                font-weight: 800;
-                color: $text-color;
-            }
+    &__left, &__right{
+
+        &__list{
             
-            .navbar-list-element-sections{
-                padding: 1rem;
-                border-radius: 1rem;
-                  
-            }
+                display: flex;
+                align-items: center; 
+                gap: 2rem;
+                list-style: none;
+                margin: 0;
 
-            .navbar-list-element-sections:hover{
-                color: #252525;
-                background-color: $gray;
-                border-bottom: 2px solid $black;  
-                
-            }
-            
-            .profile-pic{
-                border-radius: 50%;
-                width: 5rem;
-                border: 3px solid $third-color;
-            }
+                &__element{
+                    
 
-            .socialMedia-pic{
-                width: 4rem;
-            }
+                    a{
+                        text-decoration: none;
+                        font-weight: 800;
+                        color: $text-color;
+                    }
+
+                    &__profilePic{
+                        border-radius: 50%;
+                        width: 5rem;
+                        border: 3px solid $third-color;
+                    }
+
+                    &__sections{
+                        padding: 1rem;
+                        border-radius: 1rem;
+
+                        &:hover{
+                            color: #252525;
+                            background-color: $gray;
+                            border-bottom: 2px solid $black;    
+                        }
+                    }
+
+                    &__socialMedia-pic{
+                        width: 4rem;
+                    }
+                }
         }
     }
-
-    
 }
 
 //Main  
