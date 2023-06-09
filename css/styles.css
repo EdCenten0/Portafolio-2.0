@@ -67,8 +67,7 @@ body {
   width: fit-content;
   margin: 0 auto;
 }
-
-.section_aboutMe {
+.main__section__about-Me {
   background-color: #256D85;
   height: fit-content;
   width: fit-content;
@@ -78,11 +77,11 @@ body {
   justify-content: space-around;
   padding: 1rem;
 }
-.section_aboutMe .section_aboutMe-img img {
+.main__section__about-Me__avatar img {
   width: 20rem;
   border-radius: 50%;
 }
-.section_aboutMe .section_aboutMe-img p {
+.main__section__about-Me__avatar p {
   font-size: 2.2rem;
   font-weight: 800;
   color: #06283D;
@@ -92,12 +91,12 @@ body {
   border-radius: 0.5rem;
   padding: 0.2rem;
 }
-.section_aboutMe .section_aboutMe-data1 p {
+.main__section__about-Me__data__some-Info {
   font-size: 1.6rem;
   font-weight: 500;
   padding: 0.5rem;
 }
-.section_aboutMe .section_aboutMe-data1 p:nth-child(1) {
+.main__section__about-Me__data__some-Info p:nth-child(1) {
   font-size: 2.2rem;
   font-weight: 700;
 }
