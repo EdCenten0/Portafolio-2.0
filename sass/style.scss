@@ -135,16 +135,38 @@ body {
         }
 
         &__data{
-            &__some-Info{
-                font-size: $md;
-                font-weight: 500;
-                padding: 0.5rem;
 
-                & p:nth-child(1){
-                    font-size: $lg;
-                    font-weight: 700;
+            &__some-Info{
+
+                &__description{
+                    font-size: $md;
+                    font-weight: 500;
+                    padding: 0.5rem;
+
+                    & p{
+                        color: $text-color;
+                        font-weight: 500;
+                        font-size: $md;
+                    }
+
+                    & p:nth-child(1){
+                        font-size: $lg;
+                        font-weight: 700;
+                        
+                    }
+                }
+
+                &__techs{
+                   
+                    display: grid;
+                    grid-template-columns: repeat(13, 1fr);
+                    background-color: #06283D;
+                    padding: 1rem;
+                    border-radius: 10px;
                 }
             }
+
+            
 
         }
     }
