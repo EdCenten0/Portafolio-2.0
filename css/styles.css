@@ -19,7 +19,7 @@ body {
   border: 2px solid #202020;
   border-radius: 2rem;
   height: fit-content;
-  width: fit-content;
+  width: 85%;
 }
 
 .navbar {
@@ -27,8 +27,7 @@ body {
   color: #DFF6FF;
   font-size: 1.6rem;
   display: flex;
-  justify-content: space-around;
-  gap: 60rem;
+  justify-content: space-between;
   align-items: center;
   margin: 1rem;
 }
@@ -65,9 +64,10 @@ body {
 .main {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  width: 85%;
+  width: fit-content;
   margin: 0 auto;
   gap: 10rem;
+  margin: 10rem;
 }
 .main__section__about-Me {
   background-color: #256D85;
