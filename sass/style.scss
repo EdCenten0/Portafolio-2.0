@@ -22,7 +22,7 @@ body {
     background-color: $first-color;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    
+    padding-bottom: 10rem;
 }
 
 
@@ -100,10 +100,14 @@ body {
 
 //Main  
 .main{
-    display: flex;
-    justify-content: center;
-    width: 70%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    width:85%;
     margin: 0 auto;
+    gap: 10rem;
+    
+    
+    
     
     &__section__about-Me{
         background-color: $second-color;
@@ -114,6 +118,29 @@ body {
         display: flex;
         justify-content: space-around;
         padding: 1rem;
+
+        &__littleData{
+            padding: 0 1rem;
+            p{
+                color: $text-color;
+                font-size: $md;
+                text-align:left;
+
+                span{
+                    font-weight: 800;
+                }
+            }
+
+            
+
+
+            p:nth-child(1){
+                font-weight: 800;
+                font-size: $lg;
+                
+            }
+        }
+        
 
         &__avatar{
             img{
@@ -171,6 +198,7 @@ body {
                     & p{
                         color: $text-color;
                         font-size: $md;
+                        
                     }
 
                     & p:nth-child(1){
@@ -185,7 +213,11 @@ body {
             
 
         }
+
+        
     }
+
+    
     
 }
 

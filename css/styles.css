@@ -6,6 +6,7 @@ body {
   background-color: #06283D;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  padding-bottom: 10rem;
 }
 
 .header {
@@ -62,10 +63,11 @@ body {
 }
 
 .main {
-  display: flex;
-  justify-content: center;
-  width: 70%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  width: 85%;
   margin: 0 auto;
+  gap: 10rem;
 }
 .main__section__about-Me {
   background-color: #256D85;
@@ -76,6 +78,21 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 1rem;
+}
+.main__section__about-Me__littleData {
+  padding: 0 1rem;
+}
+.main__section__about-Me__littleData p {
+  color: #DFF6FF;
+  font-size: 1.6rem;
+  text-align: left;
+}
+.main__section__about-Me__littleData p span {
+  font-weight: 800;
+}
+.main__section__about-Me__littleData p:nth-child(1) {
+  font-weight: 800;
+  font-size: 2.2rem;
 }
 .main__section__about-Me__avatar img {
   width: 20rem;
