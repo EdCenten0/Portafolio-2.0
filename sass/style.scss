@@ -66,9 +66,15 @@ body {
         top:0;
         margin: 1rem 0 0 1rem;
 
+        &:hover.mobile-menu__content{
+            width: 10000rem;
+        }
+
         @media(max-width: $tablet){
             display: block;
         }
+        
+        
     }
 
     //mobile-menu__content
@@ -76,12 +82,19 @@ body {
         position: absolute;
         background-color: $second-color;
         width: 100%;
-        height: 90%;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         gap: 30%;
         border-radius: 2%;
         align-items: center;
+        margin-left:-100vw ;
+        transition: margin-left 1s;
+        
+
+        
+        
+        
 
         @media (min-width:$tablet){
             display: none;
@@ -90,7 +103,7 @@ body {
 
         //mobile-menu__content__sections
         &__sections{
-
+            
 
             //mobile-menu__content__sections__list
             &__list{
@@ -100,15 +113,20 @@ body {
                 flex-direction: column;
                 align-items: center;
                 margin: 2rem 0 0 0;
+                
                
 
                 //mobile-menu__content__sections__list__element
                 &__element{
-                    padding-top: 5rem;
-                    padding: 2rem 100vw;
+                    padding: 2rem;
+                    &:nth-child(1){
+                        padding: 0;
+                    }
+                    
+
 
                     &:hover:nth-child(2), &:hover:nth-child(3), &:hover:nth-child(4){
-                        background-color: $third-color;
+                       
                         cursor: pointer;
                     }
 
@@ -116,6 +134,7 @@ body {
                         text-decoration: none;
                         color: $text-color;
                         font-size: $lg;
+                        
                     }
 
                     //mobile-menu__content__sections__list__element__profilePic
@@ -147,6 +166,7 @@ body {
                     //mobile-menu__content__socialMedia__list__element a img
                     img{
                         width: 5rem;
+                        
 
                     }
                 }
@@ -233,6 +253,11 @@ body {
 
                     &__socialMedia-pic{
                         width: 4rem;
+                        transition: width 0.1s;
+
+                        &:hover{
+                            width: 5rem;
+                        }
                     }
 
 
@@ -252,10 +277,15 @@ body {
     margin: 0 auto;
     gap: 10rem;
     margin: 10rem;
+    
+    @media (max-width: $tablet){
+        margin: 10rem 0;
+    }
 
     @media (max-width:$tablet) or (max-width: $Laptop){
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 1rem;
     }
 
@@ -263,18 +293,29 @@ body {
     &__section__about-Me{
         background-color: $second-color;
         height: fit-content;
-        width: fit-content;
+        width: 100%;
         border:2px solid $black;
         border-radius: 2rem;
         display: grid;
         grid-template-columns: 1fr 2fr;
         padding: 1rem;
 
+        @media (max-width: $Laptop){
+            width: 90%;
+            grid-template-columns: 1fr;
+            grid-column: 1/3;
+            align-items: center;
+        }
+        
         
 
         //main__section__about__me__littleData
         &__littleData{
             padding: 0 1rem;
+            grid-column: span 2;
+
+            
+            
 
             //main__section__about__me__littleData p
             p{
@@ -398,7 +439,6 @@ body {
         }
     }    
 }
-
 
 .inactive{
     display: none;
