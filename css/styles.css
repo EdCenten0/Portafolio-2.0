@@ -194,6 +194,8 @@ body {
 @media (max-width: 768px) {
   .main__section__about-Me {
     width: 80%;
+    display: flex;
+    flex-direction: column;
   }
 }
 .main__section__about-Me__littleData {
