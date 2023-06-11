@@ -66,26 +66,29 @@ body {
         top:0;
         margin: 1rem 0 0 1rem;
 
-        &:hover.mobile-menu__content{
-            width: 10000rem;
-        }
 
         @media(max-width: $tablet){
             display: block;
         }
     }
 
+
+
     //mobile-menu__content
     &__content{
         position: absolute;
         background-color: $second-color;
         width: 100%;
-        height: fit-content;
+        height: 100rem;
         display: flex;
         flex-direction: column;
         gap: 30%;
         border-radius: 2%;
         align-items: center;
+        right: 100%;
+        transition: all 0.5s ease-in-out;
+        
+        
 
         @media (min-width:769px){
             display: none;
@@ -140,6 +143,10 @@ body {
             list-style: none;
             display: flex;
             gap: 5rem;
+
+            @media (max-width:$mobile){
+                gap: 2rem;
+            }
 
             //mobile-menu__content__socialMedia__list__element
             &__element{
@@ -431,6 +438,21 @@ body {
     }    
 }
 
+
+//Utilities
 .inactive{
     display: none;
+}
+
+.slide{
+    position: absolute;
+
+    @media(max-width: $tablet){
+        transform: translate(97.5vw, 0);
+    }
+
+    @media(max-width: $mobile){
+        transform: translate(100%, 0);
+    }
+    
 }
