@@ -88,15 +88,14 @@ body {
         gap: 30%;
         border-radius: 2%;
         align-items: center;
-        margin-left:-100vw ;
-        transition: margin-left 1s;
+
         
 
         
         
         
 
-        @media (min-width:$tablet){
+        @media (min-width:769px){
             display: none;
         }
 
@@ -305,6 +304,10 @@ body {
             grid-template-columns: 1fr;
             grid-column: 1/3;
             align-items: center;
+        }
+
+        @media (max-width:$tablet){
+            width: 80%;
         }
         
         

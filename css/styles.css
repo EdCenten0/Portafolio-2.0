@@ -53,10 +53,8 @@ body {
   gap: 30%;
   border-radius: 2%;
   align-items: center;
-  margin-left: -100vw;
-  transition: margin-left 1s;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .mobile-menu__content {
     display: none;
   }
@@ -191,6 +189,11 @@ body {
     grid-template-columns: 1fr;
     grid-column: 1/3;
     align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .main__section__about-Me {
+    width: 80%;
   }
 }
 .main__section__about-Me__littleData {
