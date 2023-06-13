@@ -9,3 +9,4 @@ mobile_menu__img.addEventListener('click', showHamMenu);
 function showHamMenu(){
     mobile_menu__content.classList.toggle('slide')
 }
+

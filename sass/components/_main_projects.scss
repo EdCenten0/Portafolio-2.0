@@ -52,15 +52,17 @@
     }
 
     &__containers{
-
         display: grid;
         grid-template-columns: repeat(3,1fr);
+
+        & a{
+            text-decoration: none;
+        }
         &__project{
             border: 1px solid c.$third-color;
             border-radius: 5%;
             background-color: c.$first-color;
             transition: transform 0.1s;
-            
 
             &:hover{
                 transform: scale(1.1);

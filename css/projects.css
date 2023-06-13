@@ -321,6 +321,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.main__section__projects__containers a {
+  text-decoration: none;
+}
 .main__section__projects__containers__project {
   border: 1px solid #47B5FF;
   border-radius: 5%;
