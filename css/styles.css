@@ -1,14 +1,3 @@
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: #06283D;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  padding-bottom: 10rem;
-}
-
 .header {
   background-color: #256D85;
   top: 0;
@@ -279,22 +268,15 @@ body {
   font-size: 2.2rem;
 }
 
-.inactive {
-  display: none;
+html {
+  font-size: 62.5%;
 }
 
-.slide {
-  position: absolute;
-}
-@media (max-width: 768px) {
-  .slide {
-    transform: translate(97.5vw, 0);
-  }
-}
-@media (max-width: 480px) {
-  .slide {
-    transform: translate(100%, 0);
-  }
+body {
+  background-color: #06283D;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 10rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
