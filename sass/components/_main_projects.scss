@@ -1,0 +1,67 @@
+@forward '../style.scss';
+@use '../vars/colors' as c;
+@use '../vars/fonts' as fs;
+@use '../vars/mqSizes' as mq;
+
+
+
+.main{
+    display: flex;
+    width:70%;
+    height: fit-content;
+    margin: 0 auto;
+    gap: 10rem;
+    
+    
+    &__section__projects{
+        background-color: c.$second-color;
+        height: fit-content;
+        width: 100%;
+        border:2px solid c.$black;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+
+    &__filters{
+
+        display: flex;
+        flex-direction: column;
+        
+        &__boxFilter{
+            background-color:c.$third-color;
+            border-radius: 35%;
+            width: 4rem;
+            display: flex;
+            justify-content: center;
+            
+
+            &:hover{
+                background-color: c.$first-color;
+                cursor: pointer;
+            }
+
+            p{
+                color: c.$text-color;
+                font-size: fs.$sm;
+            }
+        }
+    }
+
+    &__containers{
+
+        display: flex;
+        flex-direction: column;
+        &__project{
+            &__img{
+                img{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+}
+
