@@ -1,0 +1,226 @@
+@use '../vars/colors' as c;
+@use '../vars/fonts' as fs;
+@use '../vars/mqSizes' as mq;
+
+// Header
+.header{
+    background-color: c.$second-color;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 4% auto;
+    border:2px solid c.$black;
+    border-radius: 2rem;
+    height: fit-content;
+    width: 85%;
+    
+    @media (max-width:mq.$tablet){
+        border:none;
+    }
+    
+}
+
+//mobile-menu
+.mobile-menu{
+
+    //mobile-menu__img
+    &__img{
+        width: 5rem;
+        display: none;
+        position: absolute;
+        left: 0;
+        top:0;
+        margin: 1rem 0 0 1rem;
+
+
+        @media(max-width: mq.$tablet){
+            display: block;
+        }
+    }
+
+
+
+    //mobile-menu__content
+    &__content{
+        position: absolute;
+        background-color: c.$second-color;
+        width: 100%;
+        height: 100rem;
+        display: flex;
+        flex-direction: column;
+        gap: 30%;
+        border-radius: 2%;
+        align-items: center;
+        right: 100%;
+        transition: all 0.5s ease-in-out;
+        
+        
+
+        @media (min-width:769px){
+            display: none;
+        }
+
+        //mobile-menu__content__sections
+        &__sections{
+            
+            //mobile-menu__content__sections__list
+            &__list{
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 2rem 0 0 0;
+                
+                //mobile-menu__content__sections__list__element
+                &__element{
+                    padding: 2rem;
+                    &:nth-child(1){
+                        padding: 0;
+                    }
+                    
+                    &:hover:nth-child(2), &:hover:nth-child(3), &:hover:nth-child(4){ 
+                        cursor: pointer;
+                    }
+
+                    &__link-sections{
+                        text-decoration: none;
+                        color: c.$text-color;
+                        font-size: fs.$lg;
+                        
+                    }
+
+                    //mobile-menu__content__sections__list__element__profilePic
+                    &__profilePic{
+                        width: 20rem;
+                        border-radius: 50%;
+                        border: 3px solid c.$third-color;
+                        
+                    }
+                }
+            }
+        }
+
+         //mobile-menu__content__socialMedia
+    &__socialMedia{
+
+        //mobile-menu__content__socialMedia__list
+        &__list{
+            list-style: none;
+            display: flex;
+            gap: 5rem;
+
+            @media (max-width:mq.$mobile){
+                gap: 2rem;
+            }
+
+            //mobile-menu__content__socialMedia__list__element
+            &__element{
+                
+                //mobile-menu__content__socialMedia__list__element a
+                a{
+
+                    //mobile-menu__content__socialMedia__list__element a img
+                    img{
+                        width: 5rem;
+                        
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    }
+
+   
+
+
+}
+
+
+.navbar {
+    margin-top: 1.0rem;
+    color: c.$text-color;
+    font-size: fs.$md;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+
+    
+
+    @media (max-width:mq.$tablet){
+        display: none;
+    }
+    
+    
+
+    &__left, &__right{
+
+        &__list{
+            
+                display: flex;
+                align-items: center; 
+                gap: 2rem;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                @media (max-width: mq.$tablet) {
+
+                    &{
+                        flex-direction: column;
+                        padding: 2rem 0;
+                        display: block;
+                        
+                    }
+
+                    
+                }
+
+
+
+                &__element{
+
+                    a{
+                        text-decoration: none;
+                        font-weight: 800;
+                        color: c.$text-color;
+                    }
+
+                    &__profilePic{
+                        border-radius: 50%;
+                        width: 5rem;
+                        border: 3px solid c.$third-color;
+                    }
+
+                    &__sections{
+                        padding: 1rem;
+                        border-radius: 1rem;
+
+                        &:hover{
+                            color: #252525;
+                            background-color: c.$gray;
+                            border-bottom: 2px solid c.$black;    
+                        }
+                    }
+
+                    &__socialMedia-pic{
+                        width: 4rem;
+                        transition: width 0.1s;
+
+                        &:hover{
+                            width: 5rem;
+                        }
+                    }
+
+
+                    
+                }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use '../vars/mqSizes' as mq;
+
+//Utilities
+.inactive{
+    display: none;
+}
+
+.slide{
+    position: absolute;
+
+    @media(max-width: mq.$tablet){
+        transform: translate(97.5vw, 0);
+    }
+
+    @media(max-width: mq.$mobile){
+        transform: translate(100%, 0);
+    }
+    
+}

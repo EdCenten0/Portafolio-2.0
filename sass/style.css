@@ -7,6 +7,7 @@
   margin: 4% auto;
   border: 2px solid #202020;
   border-radius: 2rem;
+  height: -moz-fit-content;
   height: fit-content;
   width: 85%;
 }
@@ -148,6 +149,7 @@
 .main {
   display: grid;
   grid-template-columns: 4fr 1fr;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   gap: 10rem;
@@ -168,6 +170,7 @@
 }
 .main__section__about-Me {
   background-color: #256D85;
+  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   border: 2px solid #202020;
@@ -277,6 +280,4 @@ body {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   padding-bottom: 10rem;
-}
-
-/*# sourceMappingURL=projects.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+@use '../vars/colors' as c;
+@use '../vars/fonts' as fs;
+@use '../vars/mqSizes' as mq;
+
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: c.$first-color;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 10rem;
+}
