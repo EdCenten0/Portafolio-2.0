@@ -54,6 +54,14 @@
     &__containers{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+
+        @media (max-width: mq.$tablet){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: mq.$mobile){
+                grid-template-columns: repeat(1, 1fr);
+        }
         
 
         & a{

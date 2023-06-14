@@ -321,6 +321,16 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+@media (max-width: 768px) {
+  .main__section__projects__containers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .main__section__projects__containers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .main__section__projects__containers a {
   text-decoration: none;
 }
