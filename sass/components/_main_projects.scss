@@ -56,11 +56,13 @@
         grid-template-columns: repeat(3,1fr);
 
         @media (max-width: mq.$tablet){
+            margin-top: 2rem;
             grid-template-columns: repeat(2, 1fr);
         }
 
         @media (max-width: mq.$mobile){
-                grid-template-columns: repeat(1, 1fr);
+            margin-top: 2rem;
+            grid-template-columns: repeat(1, 1fr);
         }
         
 

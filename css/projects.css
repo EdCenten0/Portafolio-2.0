@@ -323,11 +323,13 @@ body {
 }
 @media (max-width: 768px) {
   .main__section__projects__containers {
+    margin-top: 2rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 480px) {
   .main__section__projects__containers {
+    margin-top: 2rem;
     grid-template-columns: repeat(1, 1fr);
   }
 }
