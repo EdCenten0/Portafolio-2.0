@@ -1,3 +1,21 @@
+.inactive {
+  display: none;
+}
+
+.slide {
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .slide {
+    transform: translate(97.5vw, 0);
+  }
+}
+@media (max-width: 480px) {
+  .slide {
+    transform: translate(100%, 0);
+  }
+}
+
 .header {
   background-color: #256D85;
   top: 0;
@@ -40,12 +58,7 @@
   border-radius: 2%;
   align-items: center;
   right: 100%;
-  transition: all 0.5s ease-in-out;
-}
-@media (min-width: 769px) {
-  .mobile-menu__content {
-    display: none;
-  }
+  transition: all 0.3s ease-in-out;
 }
 .mobile-menu__content__sections__list {
   list-style: none;
