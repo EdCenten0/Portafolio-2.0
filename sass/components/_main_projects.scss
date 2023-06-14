@@ -54,6 +54,7 @@
     &__containers{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+        
 
         & a{
             text-decoration: none;
@@ -63,7 +64,9 @@
             border-radius: 5%;
             background-color: c.$first-color;
             transition: transform 0.1s;
-
+            padding: 1rem;
+            margin: 1rem;
+            
             &:hover{
                 transform: scale(1.1);
             }
@@ -88,6 +91,11 @@
                     font-weight: 500;
                     font-size: fs.$md;
                     
+                }
+
+                & p:nth-child(2){
+                    font-size: fs.$sm;
+                
                 }
             }   
         }

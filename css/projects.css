@@ -329,6 +329,8 @@ body {
   border-radius: 5%;
   background-color: #06283D;
   transition: transform 0.1s;
+  padding: 1rem;
+  margin: 1rem;
 }
 .main__section__projects__containers__project:hover {
   transform: scale(1.1);
@@ -346,6 +348,9 @@ body {
 .main__section__projects__containers__project__synopsis p:nth-child(1) {
   font-weight: 500;
   font-size: 1.6rem;
+}
+.main__section__projects__containers__project__synopsis p:nth-child(2) {
+  font-size: 1.3rem;
 }
 
 /*# sourceMappingURL=projects.css.map */
